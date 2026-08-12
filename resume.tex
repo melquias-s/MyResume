@@ -1,0 +1,213 @@
+\documentclass[10.5pt,a4paper]{article}
+
+% --------------------
+% 基础设置
+% --------------------
+
+\usepackage[
+    left=1.6cm,
+    right=1.6cm,
+    top=1.3cm,
+    bottom=1.3cm
+]{geometry}
+
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+\usepackage{xeCJK}
+
+\setlength{\parindent}{0pt}
+
+
+% 中文字体
+\setCJKmainfont{Microsoft YaHei}
+
+
+% --------------------
+% Section样式
+% --------------------
+
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}
+[\titlerule]
+
+
+\titlespacing{\section}
+{0pt}
+{8pt}
+{5pt}
+
+
+% --------------------
+% 自定义项目格式
+% --------------------
+
+\newcommand{\resumeProject}[2]
+{
+    \textbf{#1}
+    \hfill
+    #2
+}
+
+
+\newcommand{\resumeItem}[1]
+{
+    \item #1
+}
+
+
+% --------------------
+% 开始正文
+% --------------------
+
+\begin{document}
+
+
+% ====================
+% 个人信息
+% ====================
+
+
+\begin{center}
+
+{\Huge \textbf{你的名字}}
+
+\vspace{5pt}
+
+电话 | 邮箱 | 
+\href{https://github.com}{GitHub}
+
+\end{center}
+
+
+
+% ====================
+% 教育背景
+% ====================
+
+
+\section{教育背景}
+
+
+\textbf{你的学校}
+\hfill
+2023.09 -- 至今
+
+
+专业名称
+
+
+\begin{itemize}[leftmargin=*]
+
+\item GPA：
+\item 专业排名：
+\item 核心课程：
+\item 英语水平：
+
+\end{itemize}
+
+
+
+% ====================
+% 科研与项目经历
+% ====================
+
+
+\section{科研与项目经历}
+
+
+\resumeProject
+{项目名称}
+{2025}
+
+
+\begin{itemize}[leftmargin=*]
+
+\resumeItem{
+项目背景：
+针对XXX问题，设计并实现XXX方案。
+}
+
+
+\resumeItem{
+技术实现：
+使用XXX技术，实现XXX模块。
+}
+
+
+\resumeItem{
+结果：
+完成XXX功能，达到XXX效果。
+}
+
+\end{itemize}
+
+
+
+\vspace{5pt}
+
+
+
+\resumeProject
+{另一个项目}
+{2024}
+
+
+\begin{itemize}[leftmargin=*]
+
+\resumeItem{
+负责XXX系统设计与开发。
+}
+
+\resumeItem{
+使用XXX框架，实现XXX功能。
+}
+
+\end{itemize}
+
+
+
+% ====================
+% 竞赛经历
+% ====================
+
+
+\section{竞赛经历}
+
+
+\begin{itemize}[leftmargin=*]
+
+\item 比赛名称 | 奖项 | 时间
+
+\item 比赛名称 | 奖项 | 时间
+
+\end{itemize}
+
+
+
+% ====================
+% 荣誉奖项
+% ====================
+
+
+\section{荣誉奖项}
+
+
+\begin{itemize}[leftmargin=*]
+
+\item XXX奖学金
+
+\item XXX优秀学生
+
+\item XXX荣誉称号
+
+\end{itemize}
+
+
+
+\end{document}
